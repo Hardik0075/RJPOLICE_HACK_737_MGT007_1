@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot-Your Personal Assistance</title>
+    link(rel="stylesheet", href="chatbot.css")
+</head>
+<body>
+    <img src="logo.png" alt="Logo">
+    <div id="chatbox">
+        <div id="header">Bhav-vyakt chatbot</div>
+        <div id="messages">
+            <div class="message-container">
+                <div class="message userMessage">Hello! How can I help you today?</div>
+            </div>
+            <div class="message-container">
+                <div class="message botMessage">I received your message. How can I assist you?</div>
+            </div>
+        </div>
+        <div id="userInput">
+            <input type="text" id="userMessage" placeholder="Type a message...">
+            <button id="sendButton" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+script(src="chatbit.js") 
+</body>
+</html>

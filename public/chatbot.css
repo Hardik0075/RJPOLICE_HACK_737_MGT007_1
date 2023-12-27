@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffddf5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+/* background logo */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#chatbox {
+    max-width: 100%; /*  width adust karne ke liye */
+    width: 600px; 
+    background-color: #ffddf5;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#header {
+    background-color: #f857a8;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+#messages {
+    padding: 20px;
+    overflow-y: scroll;
+    max-height: 400px;  /*  Height adust karne ke liye */
+}
+
+#userInput {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #dddddd;
+}
+
+#userMessage {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#sendButton {
+    padding: 8px;
+    background-color: #f857a8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.userMessage {
+    background-color: #e985e5;
+    color: #000000;
+    border-radius: 5px;
+    margin-right: auto;
+    max-width: 70%;
+    position: relative;
+}
+
+.userMessage::before {
+    content: '\1F464'; /* Unicode for robot icon */
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.botMessage {
+    background-color: #ddd;
+    color: #333;
+    border-radius: 5px;
+    margin-left: auto;
+    max-width: 70%;
+    position: relative;
+}
+
+.botMessage::before {
+    content: '\1F609'; /* Unicode for wink face icon */
+    font-size: 20px;
+    margin-right: 5px;
+}
